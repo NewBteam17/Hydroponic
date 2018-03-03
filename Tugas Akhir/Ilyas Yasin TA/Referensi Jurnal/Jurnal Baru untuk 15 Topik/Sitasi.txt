@@ -1,0 +1,199 @@
+[1] jurnal 1 @INPROCEEDINGS{8105455, 
+author={P. Y. Yang and J. T. Tsai and J. H. Chou and W. H. Ho and Y. Y. Lai}, 
+booktitle={2017 56th Annual Conference of the Society of Instrument and Control Engineers of Japan (SICE)}, 
+title={Prediction of water quality evaluation for fish ponds of aquaculture}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={545-546}, 
+keywords={aquaculture;oxygen;pH;regression analysis;water quality;aquaculture;conductivity;fish pond;oxygen content;regression method;salinity;statistical analysis;statistical prediction;water quality evaluation;Regression method;aquaculture;water quality}, 
+doi={10.23919/SICE.2017.8105455}, 
+ISSN={}, 
+month={Sept},}
+
+[jurnal 2] @INPROCEEDINGS{7886695, 
+author={B. Aziz and E. Muchtar and F. I. Hariadi}, 
+booktitle={2016 International Symposium on Electronics and Smart Devices (ISESD)}, 
+title={Human-Machine Interface for water quality monitoring system of white-legged shrimp pond}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={73-78}, 
+keywords={LED displays;aquaculture;formal specification;human computer interaction;program testing;storage management;system monitoring;systems analysis;water quality;HMI system design;HMI system implementation;HMI system specification;HMI system testing;LED color;SD card;human machine interface;water quality monitoring system;white-legged shrimp pond;Light emitting diodes;Liquid crystal displays;Monitoring;Temperature measurement;Temperature sensors;Testing;Time measurement;HMI;design;implementation;monitoring system;testing;water quality;white-legged shrimp}, 
+doi={10.1109/ISESD.2016.7886695}, 
+ISSN={}, 
+month={Nov},}
+
+[jurnal 3]
+@INPROCEEDINGS{8248854, 
+author={J. Rocher and M. Taha and L. Parra and J. Lloret}, 
+booktitle={2017 10th IFIP Wireless and Mobile Networking Conference (WMNC)}, 
+title={Design and deployment of a WSN for water turbidity monitoring in fish farms}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-7}, 
+keywords={aquaculture;optical sensors;telecommunication network topology;turbidity;water quality;wireless sensor networks;WSN;data visualisation;fish farms;fish performance;optical sensor;packet loss rate;water quality;water turbidity monitoring;wireless connection;Fish;Monitoring;Sensor systems;Temperature measurement;Temperature sensors;Wireless sensor networks;data server;fish farm;water quality network performance;wireless sensors networ}, 
+doi={10.1109/WMNC.2017.8248854}, 
+ISSN={}, 
+month={Sept},}
+
+[jurnal 4]
+@INPROCEEDINGS{8074642, 
+author={M. E. G. Mital and Michael and V. C. Olarte and N. B. S. Ong and D. C. F. Ortega and M. T. R. Uy and J. M. B. Rocamora and E. A. Roxas and A. R. dela Cruz and R. R. P. Vicerra}, 
+booktitle={2017 5th International Conference on Information and Communication Technology (ICoIC7)}, 
+title={Characterization of underwater optical data transmission parameters under varying conditions of turbidity and water movement}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-6}, 
+keywords={data communication;hydraulic turbines;hydrological techniques;rivers;turbidity;underwater acoustic communication;underwater optical wireless communication;underwater optics;Underwater Optical Communication;bit error rate;controlled water movement;hydro-kinetic turbine testing platform;oceanographic activities;river flow simulator;seismic activities;underwater communication;underwater optical data transmission parameters;Adaptive optics;Bit error rate;Data communication;Light emitting diodes;Optical fiber communication;Rivers;Underwater communication;Effects of Turbidity and Movement;Underwater communication;optical communication underwater}, 
+doi={10.1109/ICoICT.2017.8074642}, 
+ISSN={}, 
+month={May},}
+
+[jurnal 5]
+@INPROCEEDINGS{7885315, 
+author={A. A. Azman and M. H. F. Rahiman and M. N. Taib and N. H. Sidek and I. A. A. Bakar and M. F. Ali}, 
+booktitle={2016 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)}, 
+title={A low cost nephelometric turbidity sensor for continual domestic water quality monitoring system}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={202-207}, 
+keywords={light emitting diodes;light scattering;optical receivers;optical sensors;optical transmitters;resistors;turbidimetry;turbidity;water pollution measurement;water quality;Hach 2100P;LDR;LED;NTU;PIC 16F777;RM196.95;RS232 module;continual domestic water quality monitoring system;electronic turbidity sensor;integrated sensor communication;light dependent resistor;light emitting diode;light intensity scattering;light transmitter;low-power consumption;nephelometric turbidity sensor;receiver;turbidity meter;Calibration;Consumer electronics;Light emitting diodes;Meters;Pollution measurement;Solids;Voltage measurement;NTU;Turbidity measurement;light scattering sensor;turbidity sensor;water quality}, 
+doi={10.1109/I2CACIS.2016.7885315}, 
+ISSN={}, 
+month={Oct}
+
+[jurnal 6]
+@INPROCEEDINGS{7813877, 
+author={V. Karnawat and S. L. Patil}, 
+booktitle={2016 International Conference on Computing, Communication and Automation (ICCCA)}, 
+title={Turbidity detection using image processing}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={1086-1089}, 
+keywords={cameras;image processing;turbidity;water;high definition camera;image processing;laboratory method;turbidity detection;turbidity measurement;water sample image capturing;water sample turbidity;Atmospheric measurements;Digital images;Histograms;Image color analysis;Particle measurements;Pollution measurement;Image processing;histogram;nephelometry;thresholding;turbidity}, 
+doi={10.1109/CCAA.2016.7813877}, 
+ISSN={}, 
+month={April},}
+
+[jurnal 7]
+@INPROCEEDINGS{7562931, 
+author={V. K. Gowda and V. Maik and K. Karibassappa and J. Paik}, 
+booktitle={2016 International Conference on Electronics, Information, and Communications (ICEIC)}, 
+title={Removal of underwater turbidity using an optical imaging platform}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={1-5}, 
+keywords={diffraction;filtering theory;image restoration;least squares approximations;turbidity;Bayesian restoration filter;CODE V optical simulator;diffraction;least square approach;modulation transfer function;optical imaging platform;optical parameters;optical transfer function;point spread function;polychromatic images;restoration filter;test parameters;under water imaging system;underwater turbidity removal;water distortion;Deconvolution;Image restoration;Lenses;MATLAB;Optical diffraction;Optical filters;Optical imaging;Code V;Image restoration;PSF;Turbidity}, 
+doi={10.1109/ELINFOCOM.2016.7562931}, 
+ISSN={}, 
+month={Jan},}
+
+[jurnal 8]
+@INPROCEEDINGS{7370456, 
+author={R. Komiyama and T. Kageyama and M. Miura and H. Miyashita and S. S. Lee}, 
+booktitle={2015 IEEE SENSORS}, 
+title={Turbidity monitoring of lake water by transmittance measuresment with a simple optical setup}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={1-4}, 
+keywords={environmental monitoring (geophysics);lakes;light emitting diodes;photodiodes;turbidimetry;water quality;LED;lake water quality monitoring;photodiode;scattered LED light transmittance;simple optical setup;transmittance measurement;turbidity monitoring;turbidity sensor;wireless sensor network system;Lakes;Light emitting diodes;Microfluidics;Monitoring;Optical variables measurement;Standards;Wireless sensor networks;optical setup;turbidity;water quality monitoring}, 
+doi={10.1109/ICSENS.2015.7370456}, 
+ISSN={}, 
+month={Nov},}
+
+[jurnal 9]
+@article{ATIZ2014351,
+title = "Investigation of turbidity effect on exergetic performance of solar ponds",
+journal = "Energy Conversion and Management",
+volume = "87",
+pages = "351 - 358",
+year = "2014",
+issn = "0196-8904",
+doi = "https://doi.org/10.1016/j.enconman.2014.07.016",
+url = "http://www.sciencedirect.com/science/article/pii/S0196890414006475",
+author = "Ayhan Atiz and Ismail Bozkurt and Mehmet Karakilcik and Ibrahim Dincer",
+keywords = "Solar pond, Turbidity effect, Transmission of salty water, Exergy analysis, Efficiency"
+}
+[jurnal 10]
+@ARTICLE{7311041, 
+author={Y. Hadjadj and I. Fofana and J. Sabau and E. Briosso}, 
+journal={IEEE Transactions on Dielectrics and Electrical Insulation}, 
+title={Assessing insulating oil degradation by means of turbidity and UV/VIS spectrophotometry measurements}, 
+year={2015}, 
+volume={22}, 
+number={5}, 
+pages={2653-2660}, 
+keywords={condition monitoring;power transformer insulation;spectrophotometry;transformer oil;turbidity;ASTM test methods;DDP;IFT;UV/VIS spectrophotometry measurements;dissolved decay products;insulating oil;insulating oil degradation;interfacial tension;laboratory testing procedures;oil analyses;oil filled power transformers;power transformers condition monitoring;transformer oil;turbidity;Aging;Color;Oil insulation;Oils;Power transformer insulation;Power transformer;UVspectrophotometry;acidity;aging;color;dielectric dissipation factor;insulation condition assessment;interfacial tension;oil;turbidity}, 
+doi={10.1109/TDEI.2015.005111}, 
+ISSN={1070-9878}, 
+month={October},}
+[jurnal 11]
+@article{MOMENI2018347,
+title = "Using Chitosan/CHPATC as coagulant to remove color and turbidity of industrial wastewater: Optimization through RSM design",
+journal = "Journal of Environmental Management",
+volume = "211",
+pages = "347 - 355",
+year = "2018",
+issn = "0301-4797",
+doi = "https://doi.org/10.1016/j.jenvman.2018.01.031",
+url = "http://www.sciencedirect.com/science/article/pii/S0301479718300318",
+author = "Meysam Mohammad Momeni and Davood Kahforoushan and Farhang Abbasi and Saeid Ghanbarian",
+keywords = "Color, Turbidity, Wastewater, Melanoidin, Coagulation, Experimental design, Natural coagulant, Modified chitosan"
+}
+[jurnal 12]
+@INPROCEEDINGS{7994507, 
+author={H. Yasuga and N. Miki}, 
+booktitle={2017 19th International Conference on Solid-State Sensors, Actuators and Microsystems (TRANSDUCERS)}, 
+title={Adjustment of surface condition for self-generation of droplet array using oil-water replacement}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={2175-2178}, 
+keywords={drops;micromechanical devices;photoresists;surface energy;droplet array;nanoliter-scale droplets;oil-water replacement;photoresist off-stoichiometry thiol-ene;polymer chain grafting;self-generation;surface condition;surface energy;two-dimensional array;Fabrication;Frequency division multiplexing;Microfluidics;Nanobioscience;Polymers;Solvents;Surface treatment;Droplet generation;Surface modification;capillary;off-stoichiometry thiol-ene (OSTE);water-in-oil droplets}, 
+doi={10.1109/TRANSDUCERS.2017.7994507}, 
+ISSN={}, 
+month={June},}
+[13]
+@INPROCEEDINGS{5691484, 
+author={Han Xiao-jun and Chen Shou-yu}, 
+booktitle={The 2nd International Conference on Information Science and Engineering}, 
+title={Fuzzy sets decision-making theory and its application in reallocation of replaced water of the Yellow River}, 
+year={2010}, 
+volume={}, 
+number={}, 
+pages={1220-1224}, 
+keywords={Decision making;Economic indicators;Fuzzy sets;Indexes;Rivers;Systematics;Water resources;Fuzzy sets decision-making;Qualitative index;Quantitative index;Replaced water}, 
+doi={10.1109/ICISE.2010.5691484}, 
+ISSN={2160-1283}, 
+month={Dec},}
+[14]
+@article{ZHANG2017137,
+title = "Optimizing water use efficiency and economic return of super high yield spring maize under drip irrigation and plastic mulching in arid areas of China",
+journal = "Field Crops Research",
+volume = "211",
+pages = "137 - 146",
+year = "2017",
+issn = "0378-4290",
+doi = "https://doi.org/10.1016/j.fcr.2017.05.026",
+url = "http://www.sciencedirect.com/science/article/pii/S0378429017303787",
+author = "Guoqiang Zhang and Chaowei Liu and Chunhua Xiao and Ruizhi Xie and Bo Ming and Peng Hou and Guangzhou Liu and Wenjuan Xu and Dongping Shen and Keru Wang and Shaokun Li",
+keywords = "Drip irrigation–plastic film mulching, Maize, Super high yield (>15Mgha), Water use efficiency, Economic return"
+}
+[15]
+@article{MAKROPOULOS2017,
+title = "Sewer-mining: A water reuse option supporting circular economy, public service provision and entrepreneurship",
+journal = "Journal of Environmental Management",
+year = "2017",
+issn = "0301-4797",
+doi = "https://doi.org/10.1016/j.jenvman.2017.07.026",
+url = "http://www.sciencedirect.com/science/article/pii/S0301479717306928",
+author = "C. Makropoulos and E. Rozos and I. Tsoukalas and A. Plevri and G. Karakatsanis and L. Karagiannidis and E. Makri and C. Lioumis and C. Noutsopoulos and D. Mamais and C. Rippis and E. Lytras",
+keywords = "Water reuse, Ecosystem services, Sewer-mining, SMEs, Smart water systems"
+}

@@ -1,0 +1,183 @@
+[16] jurnal
+@article{LU2017356,
+title = "A research on the application of fuzzy iteration clustering in the water conservancy project",
+journal = "Journal of Cleaner Production",
+volume = "151",
+pages = "356 - 360",
+year = "2017",
+issn = "0959-6526",
+doi = "https://doi.org/10.1016/j.jclepro.2017.02.064",
+url = "http://www.sciencedirect.com/science/article/pii/S0959652617302780",
+author = "Shibao Lu and Yizi Shang and Yuwen Li",
+keywords = "Fuzzy clustering, Fuzzy mode recognition, Iteration, Project bidding, Bidding evaluation"
+}
+[17] Jurnal
+@article{GHARIBI201287,
+title = "A novel approach in water quality assessment based on fuzzy logic",
+journal = "Journal of Environmental Management",
+volume = "112",
+pages = "87 - 95",
+year = "2012",
+issn = "0301-4797",
+doi = "https://doi.org/10.1016/j.jenvman.2012.07.007",
+url = "http://www.sciencedirect.com/science/article/pii/S0301479712003684",
+author = "Hamed Gharibi and Amir Hossein Mahvi and Ramin Nabizadeh and Hossein Arabalibeik and Masud Yunesian and Mohammad Hossein Sowlat",
+keywords = "Fuzzy logic, Water quality index, Water quality assessment, Mamloo dam"
+}
+[18] Jurnal
+@article{kotimah2017optimization,
+  title={Optimization of Fuzzy Tsukamoto Membership Function using Genetic Algorithm to Determine the River Water Quality},
+  author={Kotimah, Qoirul and Mahmudy, Wayan Firdaus and Wijayaningrum, Vivi Nur},
+  journal={International Journal of Electrical and Computer Engineering},
+  volume={7},
+  number={5},
+  pages={2838},
+  year={2017},
+  publisher={IAES Institute of Advanced Engineering and Science}
+}
+[19] Jurnal
+@article{BORQUEZLOPEZ2018,
+title = "Improving feeding strategies for shrimp farming using fuzzy logic, based on water quality parameters.",
+journal = "Aquacultural Engineering",
+year = "2018",
+issn = "0144-8609",
+doi = "https://doi.org/10.1016/j.aquaeng.2018.01.002",
+url = "http://www.sciencedirect.com/science/article/pii/S0144860917301668",
+author = "R.A. Bórquez-Lopez and R. Casillas-Hernandez and J.A. Lopez-Elias and R.H. Barraza-Guardado and L.R. Martinez-Cordova",
+keywords = "fuzzy logic, , feeding, aquaculture, water quality"
+}
+[20] Jurnal
+@INPROCEEDINGS{8071997,
+author={M. A. Salman and S. Ozdemir and F. V. Celebi},
+booktitle={2017 International Symposium on Networks, Computers and Communications (ISNCC)},
+title={Fuzzy logic based traffic surveillance system using cooperative V2X protocols with low penetration rate},
+year={2017},
+volume={},
+number={},
+pages={1-6},
+keywords={fuzzy logic;protocols;road traffic control;road vehicles;surveillance;traffic engineering computing;vehicular ad hoc networks;COLOMBO project;RSU;VTT;cooperative V2X protocols;different traffic conditions;fuzzy logic based traffic surveillance system;low penetration rate;network simulator benchmark;road side unit;signal control design;signalized intersection;traffic condition;traffic indicator;vehicle total time;vehicle-to-everything V2X protocol;Estimation;Fuzzy logic;Fuzzy sets;Protocols;Roads;Surveillance},
+doi={10.1109/ISNCC.2017.8071997},
+ISSN={},
+month={May},}
+[21] Jurnal
+@article{FORIO201758,
+title = "Fuzzy modelling to identify key drivers of ecological water quality to support decision and policy making",
+journal = "Environmental Science & Policy",
+volume = "68",
+pages = "58 - 68",
+year = "2017",
+issn = "1462-9011",
+doi = "https://doi.org/10.1016/j.envsci.2016.12.004",
+url = "http://www.sciencedirect.com/science/article/pii/S1462901116308917",
+author = "Marie Anne Eurie Forio and Ans Mouton and Koen Lock and Pieter Boets and Thi Hanh Tien Nguyen and Minar Naomi Damanik Ambarita and Peace Liz Sasha Musonge and Luis Dominguez-Granda and Peter L.M. Goethals",
+keywords = "Fuzzy logic, Environmental variables, Decision support systems, River basin management"
+}
+[22] Jurnal
+@ARTICLE{7571129,
+author={F. S. Tidjani and A. Hamadi and A. Chandra and P. Pillay and A. Ndtoungou},
+journal={IEEE Transactions on Smart Grid},
+title={Optimization of Standalone Microgrid Considering Active Damping Technique and Smart Power Management Using Fuzzy Logic Supervisor},
+year={2017},
+volume={8},
+number={1},
+pages={475-484},
+keywords={distributed power generation;energy management systems;fuzzy control;optimisation;power distribution faults;power generation control;power generation faults;power generation reliability;power grids;power system interconnection;voltage-source convertors;MG;VSC mathematical model;active damping technique;component size reduction;energy deficiency;fuzzy logic supervisor;grid-connected mode;island mode;load interconnection;multiple distributed generator;output LC filter size reduction;power energy management reliability;power quality enhancement;smart power management;standalone microgrid optimization;voltage source convertor;Damping;Fuzzy logic;Mathematical model;Microgrids;Power conversion;Resistors;Microgrid (MG);active damping control (ADC);fuzzy logic supervisor (FLS);photovoltaic array (PVA);voltage source converter (VSC)},
+doi={10.1109/TSG.2016.2610971},
+ISSN={1949-3053},
+month={Jan},}
+[23] Jurnal
+@article{ZOGHI2017986,
+title = "Optimization solar site selection by fuzzy logic model and weighted linear combination method in arid and semi-arid region: A case study Isfahan-IRAN",
+journal = "Renewable and Sustainable Energy Reviews",
+volume = "68",
+pages = "986 - 996",
+year = "2017",
+issn = "1364-0321",
+doi = "https://doi.org/10.1016/j.rser.2015.07.014",
+url = "http://www.sciencedirect.com/science/article/pii/S1364032115006619",
+author = "Mahmood Zoghi and Amir Houshang Ehsani and Mahdis Sadat and Mohammad javad Amiri and Sepideh Karimi",
+keywords = "Renewable energy, Analytical Hierarchy Process, Fuzzy method, Solar power plant"
+}
+[24] Jurnal
+@article{jung2017improving,
+  title={Improving adaptive cluster head selection of teen protocol using fuzzy logic for WMSN},
+  author={Jung, KyeDong and Lee, Jong-Yong and Jeong, Hwa-Young},
+  journal={Multimedia Tools and Applications},
+  volume={76},
+  number={17},
+  pages={18175--18190},
+  year={2017},
+  publisher={Springer}
+}
+[25] Jurnal
+@INPROCEEDINGS{7912685,
+author={Y. Zhai and W. Xu},
+booktitle={2017 25th Euromicro International Conference on Parallel, Distributed and Network-based Processing (PDP)},
+title={Efficient Bottleneck Detection in Stream Process System Using Fuzzy Logic Model},
+year={2017},
+volume={},
+number={},
+pages={438-445},
+keywords={Big Data;cloud computing;data analysis;fuzzy logic;Big Data;SPE scalability improvement;cloud environment;data processing;fuzzy logic based runtime bottleneck operator detection;high volume data stream analysis;static configuration;store-then-process paradigm;stream process system;stream processing engines;Cloud computing;Computational modeling;Current measurement;Data models;Fuzzy logic;Scalability;Virtual machining;Big Data;Fuzzy Logic;Scalability;Stream Processing System},
+doi={10.1109/PDP.2017.71},
+ISSN={},
+month={March},
+[26] Jurnal
+@INPROCEEDINGS{7853803,
+author={G. T. Tchendjou and R. Alhakim and E. Simeu},
+booktitle={2016 Conference on Design and Architectures for Signal and Image Processing (DASIP)},
+title={Fuzzy logic modeling for objective image quality assessment},
+year={2016},
+volume={},
+number={},
+pages={98-105},
+keywords={correlation methods;fuzzy logic;fuzzy reasoning;image processing;learning (artificial intelligence);linear algebra;ANFIS;FL modeling;MOS;Pearson correlation approach;adaptive neuro-fuzzy inference system;bell-shaped membership functions;correlated metrics;fuzzy if-then rules;fuzzy logic modeling;fuzzy model design;human rating mean opinion score;human visual perception;image quality database TID2013;linear combination equations;machine learning methods;objective IQA;objective image quality assessment;Correlation;Fuzzy logic;Image quality;Mathematical model;Measurement;Predictive models;Training;ANFIS;Fuzzy Inference System;Fuzzy Logic;Image Quality Assessment;Machine Learning},
+doi={10.1109/DASIP.2016.7853803},
+ISSN={},
+month={Oct},}
+[27] Jurnal
+@INPROCEEDINGS{7832448,
+author={N. Syuhada and M. Ali and K. M. Yusof},
+booktitle={2016 16th International Conference on Control, Automation and Systems (ICCAS)},
+title={Fuzzy logic model for degumming and bleaching troubleshooting in palm oil refining},
+year={2016},
+volume={},
+number={},
+pages={1099-1104},
+keywords={bleaching (materials processing);cooling towers;distributed control;failure analysis;fuzzy control;fuzzy logic;fuzzy set theory;oil refining;vegetable oils;COG method;DCS;Mamdani approach;SOP;bleacher vessel;bleaching process failures;bleaching troubleshooting;centre of gravity method;company loss;condenser;cooling tower system;degumming process failures;degumming troubleshooting;distributed control system;ejector;fuzzy logic model;fuzzy membership function;fuzzy rules;hotwell;operating conditions;operation checklist;palm oil industry;palm oil refining;plant performance;production delay;standard operating procedure;trial and error method;Bleaching;Cooling;Data models;Fuzzy logic;Oils;Poles and towers;Refining;Bleaching;Degumming;Fuzzy logic;Palm Oil Refining;Troubleshooting},
+doi={10.1109/ICCAS.2016.7832448},
+ISSN={},
+month={Oct}
+[28] Jurnal
+@incollection{ibrisimovic2017fuzzy,
+  title={A Fuzzy Model to Predict Risk of Urinary Tract Infection},
+  author={Ibrisimovic, Monia Avdic and Karl{\i}, G{\"u}nay and Balkaya, Hasan Emin and Ibrisimovic, Mirza and Hukic, Mirsada},
+  booktitle={CMBEBIH 2017},
+  pages={289--293},
+  year={2017},
+  publisher={Springer}
+}
+[29] Jurnal
+@article{LIANGQUN2018139,
+title = "Fuzzy logic approach to visual multi-object tracking",
+journal = "Neurocomputing",
+volume = "281",
+pages = "139 - 151",
+year = "2018",
+issn = "0925-2312",
+doi = "https://doi.org/10.1016/j.neucom.2017.11.060",
+url = "http://www.sciencedirect.com/science/article/pii/S0925231217318192",
+author = "Li Liang-qun and Zhan Xi-yang and Liu Zong-xiang and Xie Wei-xin",
+keywords = "Visual multi-object tracking, Fuzzy logic, Data association, Track management"
+}
+[30] Jurnal
+@article{feng2017closed,
+  title={A closed-loop fuzzy-logic-based current controller for PMSM torque ripple minimization using the magnitude of speed harmonic as the feedback control signal},
+  author={Feng, Guodong and Lai, Chunyan and Kar, Narayan C},
+  journal={IEEE Transactions on Industrial Electronics},
+  volume={64},
+  number={4},
+  pages={2642--2653},
+  year={2017},
+  publisher={IEEE}
+}
