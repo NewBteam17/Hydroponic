@@ -1,0 +1,238 @@
+
+
+1.
+@article{SUNGTHONG2016108,
+title = "Particle Swam Optimization Based Optimal PID Parameters for Air Heater Temperature Control System",
+journal = "Procedia Computer Science",
+volume = "86",
+pages = "108 - 111",
+year = "2016",
+note = "2016 International Electrical Engineering Congress, iEECON2016, 2-4 March 2016, Chiang Mai, Thailand",
+issn = "1877-0509",
+doi = "https://doi.org/10.1016/j.procs.2016.05.027",
+url = "http://www.sciencedirect.com/science/article/pii/S1877050916303635",
+author = "Aekarin Sungthong and Wudhichai Assawinchaichote",
+keywords = "Particle Swarm Optimization, Air Heater Temperature Control, PID Controller, Tuning Parameters"
+}
+
+2.
+@article{ZHANG201448,
+title = "Predictive control optimization based PID control for temperature in an industrial surfactant reactor",
+journal = "Chemometrics and Intelligent Laboratory Systems",
+volume = "135",
+pages = "48 - 62",
+year = "2014",
+issn = "0169-7439",
+doi = "https://doi.org/10.1016/j.chemolab.2014.03.021",
+url = "http://www.sciencedirect.com/science/article/pii/S0169743914000690",
+author = "Ridong Zhang and Sheng Wu and Renquan Lu and Furong Gao",
+keywords = "Surfactant reactors, PID control, Model predictive control, State space models, Ensemble performance"
+}
+
+3.
+@article{SONG20161038,
+title = "Study on PID temperature control performance of a novel PTC material with room temperature Curie point",
+journal = "International Journal of Heat and Mass Transfer",
+volume = "95",
+pages = "1038 - 1046",
+year = "2016",
+issn = "0017-9310",
+doi = "https://doi.org/10.1016/j.ijheatmasstransfer.2015.12.057",
+url = "http://www.sciencedirect.com/science/article/pii/S001793101530346X",
+author = "Jia-liang Song and Wen-long Cheng and Zhi-ming Xu and Shuai Yuan and Ming-hou Liu",
+keywords = "PTC material, PID control, Electronic devices, Temperature control performance, Precise thermal control"
+}
+
+4.
+@article{GUREL201442,
+title = "Thermodynamic analysis of PID temperature controlled heat pump system",
+journal = "Case Studies in Thermal Engineering",
+volume = "2",
+pages = "42 - 49",
+year = "2014",
+issn = "2214-157X",
+doi = "https://doi.org/10.1016/j.csite.2013.11.002",
+url = "http://www.sciencedirect.com/science/article/pii/S2214157X13000142",
+author = "Ali Etem Gürel and Ilhan Ceylan",
+keywords = "Fluidized bed dryer, PID control, Heat pump dryer, Exergy, Energy"
+}
+
+5.
+@article{HUANG201814,
+title = "Modified Smith fuzzy PID temperature control in an oil-replenishing device for deep-sea hydraulic system",
+journal = "Ocean Engineering",
+volume = "149",
+pages = "14 - 22",
+year = "2018",
+issn = "0029-8018",
+doi = "https://doi.org/10.1016/j.oceaneng.2017.11.052",
+url = "http://www.sciencedirect.com/science/article/pii/S0029801817307217",
+author = "Haocai Huang and Shuqing Zhang and Zhao Yang and Yongqiang Tian and Xiang Zhao and Zhuoli Yuan and Shuai Hao and Jianxing Leng and Yan Wei",
+keywords = "Modified Smith predictor, Fuzzy PID, Temperature control, Oil heating, Oil-replenishing device"
+}
+
+6.
+@article{MORILLA200613,
+title = "PID CONTROL DESIGN WITH GUARANTEED STABILITY",
+journal = "IFAC Proceedings Volumes",
+volume = "39",
+number = "6",
+pages = "13 - 18",
+year = "2006",
+note = "7th IFAC Symposium on Advances in Control Education",
+issn = "1474-6670",
+doi = "https://doi.org/10.3182/20060621-3-ES-2905.00004",
+url = "http://www.sciencedirect.com/science/article/pii/S1474667015330986",
+author = "F. Morilla and F. Vázquez and R. Hernández",
+keywords = "computer aided design, PID control, robust control"
+}
+
+7.
+@article{FERNANDEZ2013126,
+title = "An Optimization Software Tool for Performance/Robustness Analysis and Tuning of PID Controllers",
+journal = "IFAC Proceedings Volumes",
+volume = "46",
+number = "17",
+pages = "126 - 131",
+year = "2013",
+note = "10th IFAC Symposium Advances in Control Education",
+issn = "1474-6670",
+doi = "https://doi.org/10.3182/20130828-3-UK-2039.00033",
+url = "http://www.sciencedirect.com/science/article/pii/S147466701534088X",
+author = "D.E. Fernändez and V.M. Alfaro and O. Arrieta and R. Vilanova",
+keywords = "PID controllers, two-degree-of-freedom controllers, performance/robustness trade-off"
+}
+
+8.
+@article{EDET20178555,
+title = "On Fractional Predictive PID Controller Design Method",
+journal = "IFAC-PapersOnLine",
+volume = "50",
+number = "1",
+pages = "8555 - 8560",
+year = "2017",
+note = "20th IFAC World Congress",
+issn = "2405-8963",
+doi = "https://doi.org/10.1016/j.ifacol.2017.08.1416",
+url = "http://www.sciencedirect.com/science/article/pii/S2405896317319626",
+author = "Emmanuel Edet and Reza Katebi",
+keywords = "Fractional-order PID controller, Dynamic matrix control, Model-based predictive controller"
+}
+
+9.
+@article{LASKAWSKI2015430,
+title = "Influence of sampling on the tuning of PID controller parameters",
+journal = "IFAC-PapersOnLine",
+volume = "48",
+number = "4",
+pages = "430 - 435",
+year = "2015",
+note = "13th IFAC and IEEE Conference on Programmable Devices and Embedded Systems",
+issn = "2405-8963",
+doi = "https://doi.org/10.1016/j.ifacol.2015.07.073",
+url = "http://www.sciencedirect.com/science/article/pii/S2405896315008484",
+author = "Michal Laskawski and Miroslaw Wcislik",
+keywords = "PID controllers, tuning, optimal control, sampling rates"
+}
+
+10.
+@article{BALAJI2015147,
+title = "Optimization of PID Control for High Speed Line Tracking Robots",
+journal = "Procedia Computer Science",
+volume = "76",
+pages = "147 - 154",
+year = "2015",
+note = "2015 IEEE International Symposium on Robotics and Intelligent Sensors (IEEE IRIS2015)",
+issn = "1877-0509",
+doi = "https://doi.org/10.1016/j.procs.2015.12.329",
+url = "http://www.sciencedirect.com/science/article/pii/S1877050915038302",
+author = "Vikram Balaji and M. Balaji and M. Chandrasekaran and M.K.A. Ahamed khan and Irraivan Elamvazuthi",
+keywords = "Mobile Robots, Line Tracking, PID Control, Differential Drive."
+}
+
+11.
+@article{MENDES201773,
+title = "Self-tuning PID controllers in pursuit of plug and play capacity",
+journal = "Control Engineering Practice",
+volume = "69",
+pages = "73 - 84",
+year = "2017",
+issn = "0967-0661",
+doi = "https://doi.org/10.1016/j.conengprac.2017.09.006",
+url = "http://www.sciencedirect.com/science/article/pii/S0967066117302095",
+author = "Jérôme Mendes and Luís Osório and Rui Araújo",
+keywords = "Adaptive PID, Control, Self-Tuning Controller (STC), PID comparison, Coupled DC motors"
+}
+
+12.
+@article{LEVA201325,
+title = "Teaching a conscious use of PI/PID tuning rules",
+journal = "IFAC Proceedings Volumes",
+volume = "46",
+number = "17",
+pages = "25 - 30",
+year = "2013",
+note = "10th IFAC Symposium Advances in Control Education",
+issn = "1474-6670",
+doi = "https://doi.org/10.3182/20130828-3-UK-2039.00007",
+url = "http://www.sciencedirect.com/science/article/pii/S1474667015340714",
+author = "Alberto Leva and Alessandro Vittorio Papadopoulos",
+keywords = "PI/PID control, PI/PID tuning rules"
+}
+
+13.
+@INPROCEEDINGS{8089268, 
+author={P. N. Crisnapati and I. N. K. Wardana and I. K. A. A. Aryanto and A. Hermawan}, 
+booktitle={2017 5th International Conference on Cyber and IT Service Management (CITSM)}, 
+title={Hommons: Hydroponic management and monitoring system for an IOT based NFT farm using web technology}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-6}, 
+keywords={Internet;Internet of Things;agriculture;computerised monitoring;microcomputers;microcontrollers;wireless LAN;Arduino Uno microcontroller;Hommons;IOT;NFT hydroponic Web interface management systems;NFT hydroponic farming;Raspberry Pi 2 Model B microcomputers;Web technology;Wi-Fi module ESP8266;agricultural land;automation system;block hydroponic farming;hydroponic management and monitoring system;hydroponic system technology;Automation;Monitoring;Sensor systems;Temperature measurement;Temperature sensors;Testing;Arduino Uno;Internet of Things;IoT;NFT Hydroponic Farm;Raspberry Pi;microcontrollers;single board computers}, 
+doi={10.1109/CITSM.2017.8089268}, 
+ISSN={}, 
+month={Aug},}
+
+14.
+@INPROCEEDINGS{8263577, 
+author={Helmy and M. G. Mahaidayu and A. Nursyahid and T. A. Setyawan and A. Hasan}, 
+booktitle={2017 IEEE International Conference on Communication, Networks and Satellite (Comnetsat)}, 
+title={Nutrient Film Technique (NFT) hydroponic monitoring system based on wireless sensor network}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={81-84}, 
+keywords={Agriculture;Conductivity;Humidity;Meters;Monitoring;Temperature measurement;Temperature sensors;EC sensor;NFT hydroponic;monitoring system;pH sensor}, 
+doi={10.1109/COMNETSAT.2017.8263577}, 
+ISSN={}, 
+month={Oct},}
+
+15.
+@article{HATFIELD20154,
+title = "Temperature extremes: Effect on plant growth and development",
+journal = "Weather and Climate Extremes",
+volume = "10",
+pages = "4 - 10",
+year = "2015",
+note = "USDA Research and Programs on Extreme Events",
+issn = "2212-0947",
+doi = "https://doi.org/10.1016/j.wace.2015.08.001",
+url = "http://www.sciencedirect.com/science/article/pii/S2212094715300116",
+author = "Jerry L. Hatfield and John H. Prueger",
+keywords = "Temperature stress, Crop production, Pollination, Phenology, Plant growth"
+}
+
+16.
+@INPROCEEDINGS{1629912, 
+author={E. D. Bolat and K. Erkan and S. Postalcioglu}, 
+booktitle={EUROCON 2005 - The International Conference on "Computer as a Tool"}, 
+title={Experimental Autotuning PID Control of Temperature Using Microcontroller}, 
+year={2005}, 
+volume={1}, 
+number={}, 
+pages={266-269}, 
+keywords={microcontrollers;ovens;self-adjusting systems;temperature control;three-term control;ADS1212;PIC 17C44;autotuning PID control;autotuning PID controller method;digital signal processing card;integral square time error criterion;microcontroller;oven temperature control;proportional-integral-derivative;Automatic control;Computer science education;Control systems;Digital relays;Industrial control;Microcontrollers;Ovens;Temperature control;Three-term control;Tuning;Adaptive control;autotuning PID methods;temperature control}, 
+doi={10.1109/EURCON.2005.1629912}, 
+ISSN={}, 
+month={Nov},}

@@ -1,0 +1,232 @@
+% No 1 
+
+@INPROCEEDINGS{8089268, 
+author={P. N. Crisnapati and I. N. K. Wardana and I. K. A. A. Aryanto and A. Hermawan}, 
+booktitle={2017 5th International Conference on Cyber and IT Service Management (CITSM)}, 
+title={Hommons: Hydroponic management and monitoring system for an IOT based NFT farm using web technology}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-6}, 
+keywords={Internet;Internet of Things;agriculture;computerised monitoring;microcomputers;microcontrollers;wireless LAN;Arduino Uno microcontroller;Hommons;IOT;NFT hydroponic Web interface management systems;NFT hydroponic farming;Raspberry Pi 2 Model B microcomputers;Web technology;Wi-Fi module ESP8266;agricultural land;automation system;block hydroponic farming;hydroponic management and monitoring system;hydroponic system technology;Automation;Monitoring;Sensor systems;Temperature measurement;Temperature sensors;Testing;Arduino Uno;Internet of Things;IoT;NFT Hydroponic Farm;Raspberry Pi;microcontrollers;single board computers}, 
+doi={10.1109/CITSM.2017.8089268}, 
+ISSN={}, 
+month={Aug},} 
+
+% No 2 
+@INPROCEEDINGS{8263577, 
+author={Helmy and M. G. Mahaidayu and A. Nursyahid and T. A. Setyawan and A. Hasan}, 
+booktitle={2017 IEEE International Conference on Communication, Networks and Satellite (Comnetsat)}, 
+title={Nutrient Film Technique (NFT) hydroponic monitoring system based on wireless sensor network}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={81-84}, 
+keywords={Agriculture;Conductivity;Humidity;Meters;Monitoring;Temperature measurement;Temperature sensors;EC sensor;NFT hydroponic;monitoring system;pH sensor}, 
+doi={10.1109/COMNETSAT.2017.8263577}, 
+ISSN={}, 
+month={Oct},}
+
+% No 3
+@article{LEE2015431,
+title = "The Internet of Things (IoT): Applications, investments, and challenges for enterprises",
+journal = "Business Horizons",
+volume = "58",
+number = "4",
+pages = "431 - 440",
+year = "2015",
+issn = "0007-6813",
+doi = "https://doi.org/10.1016/j.bushor.2015.03.008",
+url = "http://www.sciencedirect.com/science/article/pii/S0007681315000373",
+author = "In Lee and Kyoochun Lee",
+keywords = "Cloud computing, Internet of Things, Radio frequency identification, Real options, Supply chain management"
+}
+
+% No 4
+@article{HATFIELD20154,
+title = "Temperature extremes: Effect on plant growth and development",
+journal = "Weather and Climate Extremes",
+volume = "10",
+pages = "4 - 10",
+year = "2015",
+note = "USDA Research and Programs on Extreme Events",
+issn = "2212-0947",
+doi = "https://doi.org/10.1016/j.wace.2015.08.001",
+url = "http://www.sciencedirect.com/science/article/pii/S2212094715300116",
+author = "Jerry L. Hatfield and John H. Prueger",
+keywords = "Temperature stress, Crop production, Pollination, Phenology, Plant growth"
+
+}
+
+% No 5
+@INPROCEEDINGS{6223239, 
+author={M. Sun and J. Chen and D. Li}, 
+booktitle={2012 International Conference on Systems and Informatics (ICSAI2012)}, 
+title={Water temperature prediction in sea cucumber aquaculture ponds by RBF neural network model}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={1154-1159}, 
+keywords={aquaculture;pattern clustering;radial basis function networks;temperature;1D vertical model;Matlab platform;RBF neural network model;artificial neural network;geophysical condition;meteorological condition;nearest neighbor clustering algorithm;optimization model;pond environment;radial basis function;sea cucumber aquaculture pond;sea cucumber development;sea cucumber growth rate;water temperature prediction;Clustering algorithms;Mathematical model;Ocean temperature;Predictive models;Radial basis function networks;Temperature distribution;RBF neural network;nearest neighbor clustering algorithm;sea cucumber;water temperature}, 
+doi={10.1109/ICSAI.2012.6223239}, 
+ISSN={}, 
+month={May},}
+
+
+% No 6
+@ARTICLE{6849931, 
+author={H. Onoyama and C. Ryu and M. Suguri and M. Iida}, 
+journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+title={Integrate Growing Temperature to Estimate the Nitrogen Content of Rice Plants at the Heading Stage Using Hyperspectral Imagery}, 
+year={2014}, 
+volume={7}, 
+number={6}, 
+pages={2506-2515}, 
+keywords={remote sensing;vegetation;GreenNDVI-NDVI equation;PLS model;ground-based hyperspectral imaging;growing temperature;hyperspectral imagery;partial least square;reflectance data;rice plant nitrogen content;root-mean-square error;temperature data;weather condition;Agriculture;Data models;Hyperspectral imaging;Nitrogen;Predictive models;Ground-based hyperspectral imaging;heading stage;model considered growing temperature;nitrogen content;paddy rice;partial least square (PLS) regression}, 
+doi={10.1109/JSTARS.2014.2329474}, 
+ISSN={1939-1404}, 
+month={June},} 
+
+% No 7
+@article{USHAKOVA20132075,
+title = "Tolerance of wheat and lettuce plants grown on human mineralized waste to high temperature stress",
+journal = "Advances in Space Research",
+volume = "51",
+number = "11",
+pages = "2075 - 2083",
+year = "2013",
+issn = "0273-1177",
+doi = "https://doi.org/10.1016/j.asr.2013.01.017",
+url = "http://www.sciencedirect.com/science/article/pii/S0273117713000392",
+author = "Sofya A. Ushakova and Alexander A. Tikhomirov and Valentin N. Shikhov and Jean-Bernard Gros and Tamara K. Golovko and Igor V. Dal’ke and Ilya G. Zakhozhii",
+keywords = "BLSS, Human waste recycling, Wheat, Lettuce, Heat resistance, Air temperature step"
+}
+
+% No 8
+@INPROCEEDINGS{6524832, 
+author={K. Kahlen and J. Zinkernagel and H. Stützel}, 
+booktitle={2012 IEEE 4th International Symposium on Plant Growth Modeling, Simulation, Visualization and Applications}, 
+title={Modeling temperature-modulated stem growth of cucumber plants (Cucumis sativus L.)}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={188-191}, 
+keywords={functional-structural modeling;internode;shoot development;virtual plant}, 
+doi={10.1109/PMA.2012.6524832}, 
+ISSN={}, 
+month={Oct},}
+
+% No 9
+@INPROCEEDINGS{8269526, 
+author={E. A. H. Fernando and A. A. Bandala and L. A. G. Lim and A. B. Maglaya and N. Ledesma and R. R. Vicerra and E. J. Gonzaga}, 
+booktitle={2017IEEE 9th International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control, Environment and Management (HNICEM)}, 
+title={Design of a fuzzy logic controller for a vent fan and growlight in a tomato growth chamber}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-5}, 
+keywords={Fans;Fuzzy logic;Humidity;Prototypes;Temperature distribution;Vents;CO2 concentration;fuzzy logic controller;grow lights;growth chamber;humidity;temperature;tomato;vent fan}, 
+doi={10.1109/HNICEM.2017.8269526}, 
+ISSN={}, 
+month={Dec},}
+
+% No 10
+@INPROCEEDINGS{7883633, 
+author={M. U. H. Al Rasyid and E. M. Kusumaningtyas and F. Setiawan}, 
+booktitle={2016 International Conference on Knowledge Creation and Intelligent Computing (KCIC)}, 
+title={Application to Determine Water Volume for Agriculture Based on Temperature Humidity Using Wireless Sensor Network}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={105-112}, 
+keywords={agriculture;condition monitoring;fuzzy logic;humidity control;temperature control;water;wireless sensor networks;decision support system;fuzzy logic;humidity;temperature;tomato plant;waspmote agriculture sensor node;water volume;wireless sensor network;Agriculture;Fuzzy logic;Humidity;Monitoring;Temperature distribution;Temperature sensors;Wireless sensor networks;Wireless Sensor Network;fuzzy tsukamoto;humidity;temperature;tomato watering}, 
+doi={10.1109/KCIC.2016.7883633}, 
+ISSN={}, 
+month={Nov},} 
+
+% No 11
+@INPROCEEDINGS{7400353, 
+author={L. Fonseca and J. L. Mata and J. Fonseca and J. Galindo and J. Buendía and M. Font}, 
+booktitle={2015 CHILEAN Conference on Electrical, Electronics Engineering, Information and Communication Technologies (CHILECON)}, 
+title={Implementation of a temperature control system for the culture of aquatic plants}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={61-65}, 
+keywords={agriculture;carbon compounds;photosynthesis;temperature control;temperature measurement;three-term control;vegetation;PID temperature controller;Ziegler-Nichols method;aquatic plants cultivation;carbon dioxide absorption;photosynthesis;temperature measurement;Aquaculture;Carbon dioxide;Electronic mail;Pulse width modulation;Temperature control;Temperature measurement;Temperature sensors;PID;Temperature control;Ziegler-Nichols;aquatic plants;dioxide carbon;photosynthesis}, 
+doi={10.1109/Chilecon.2015.7400353}, 
+ISSN={}, 
+month={Oct},} 
+
+% No 12
+@INPROCEEDINGS{8256499, 
+author={B. Dai and R. Chen and R. C. Chen}, 
+booktitle={2017 IEEE 8th International Conference on Awareness Science and Technology (iCAST)}, 
+title={Temperature control with fuzzy neural network}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={452-455}, 
+keywords={control system synthesis;fuzzy control;neurocontrollers;optimisation;temperature control;three-term control;PID control;algorithm design method;algorithm optimization;drinking water temperature control;feedback control;fuzzy control;fuzzy neural network;industrial control;temperature control methods;temperature regulation;Fuzzy control;Fuzzy logic;Fuzzy neural networks;Neural networks;Nonlinear systems;Temperature control;BP;Fuzzy neural network;fuzzy logic;temperature control}, 
+doi={10.1109/ICAwST.2017.8256499}, 
+ISSN={}, 
+month={Nov},}
+
+% No 13
+@INPROCEEDINGS{7860141, 
+author={S. Kolhatkar and A. K. Joshi}, 
+booktitle={2016 International Conference on Computing Communication Control and automation (ICCUBEA)}, 
+title={Automatic temperature control technique for a Clinical Water Bath}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={1-4}, 
+keywords={containers;medical control systems;temperature control;temperature sensors;thermostats;LM 35;automated temperature control system;clinical water bath;microbiology laboratories;microcontroller ATmega 16;pathology laboratories;temperature sensors;thermostat;water temperature controller;Heating;Laboratories;Microcontrollers;Monitoring;Radio frequency;Temperature sensors;Solid State Relay(SSR);Temperature Sensor;Water Bath}, 
+doi={10.1109/ICCUBEA.2016.7860141}, 
+ISSN={}, 
+month={Aug},} 
+
+% No 14
+@INPROCEEDINGS{7830325, 
+author={H. Huang and S. Fu and P. Zhang and L. Sun}, 
+booktitle={2016 9th International Symposium on Computational Intelligence and Design (ISCID)}, 
+title={Design of a Small Temperature Control System Based on TEC}, 
+year={2016}, 
+volume={1}, 
+number={}, 
+pages={193-196}, 
+keywords={closed loop systems;stability;temperature control;three-term control;MAX1978;PID compensation network;TEC module;dedicated control chip;high precision temperature control;low power consumption;proportional integral differential;refrigerant;room temperature environment;semiconductor laser diode;semiconductor refrigeration closed loop automatic control;small temperature control system;temperature compensation element;temperature stability;thermoelectric cooler;Heat sinks;Heating;Refrigerators;Temperature distribution;MAX1978;PID;TEC;temperature control}, 
+doi={10.1109/ISCID.2016.1051}, 
+ISSN={}, 
+month={Dec},} 
+
+% No 15
+@INPROCEEDINGS{7781405, 
+author={G. Rata and M. Rata}, 
+booktitle={2016 International Conference and Exposition on Electrical and Power Engineering (EPE)}, 
+title={Temperature control solution with PLC}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={571-575}, 
+keywords={control engineering computing;man-machine systems;power distribution control;power distribution reliability;power system harmonics;power transmission control;power transmission reliability;programmable controllers;temperature control;three-term control;EATON;PID controller;XC-CPU101 PLC;XV102 HMI;harmonic pollution;human machine interface;liquid heating analysis;power network;power supply solution;reliability;temperature control;temperature measurement;Harmonic analysis;Heating;Power system harmonics;Reliability;Temperature measurement;Temperature sensors;AC-AC converters;PID control;PLC;harmonic distortion;temperature control}, 
+doi={10.1109/ICEPE.2016.7781405}, 
+ISSN={}, 
+month={Oct},} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
