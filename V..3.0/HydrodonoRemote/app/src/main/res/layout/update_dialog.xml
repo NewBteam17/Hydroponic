@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Ph"
+        android:ems="10"
+        android:id="@+id/editTextPh"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Suhu"
+        android:ems="10"
+        android:id="@+id/editTextSuhu"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Ec"
+        android:ems="10"
+        android:id="@+id/editTextEc"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Jarak Pupuk A"
+        android:ems="10"
+        android:id="@+id/editTextPupukA"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Jarak Pupuk B"
+        android:ems="10"
+        android:id="@+id/editTextPupukB"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New Jarak Air"
+        android:ems="10"
+        android:id="@+id/editTextJarakAir"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New ID"
+        android:ems="10"
+        android:id="@+id/editTextIdArduino"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter New "
+        android:ems="10"
+        android:id="@+id/editTextTanggal"/>
+
+
+
+
+    <Button
+        android:text="Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonUpdate"/>
+
+    <Button
+        android:text="Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDelete"/>
+
+</LinearLayout>

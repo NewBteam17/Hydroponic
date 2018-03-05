@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mulai : "
+        android:textAppearance="@style/TextAppearance.Design.Hint" />
+
+    <EditText
+        android:id="@+id/editTextMulai"
+        android:layout_width="match_parent"
+        android:text="15-09-2017"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Akhir"
+        android:textAppearance="@style/TextAppearance.Design.Hint" />
+
+    <EditText
+        android:id="@+id/editTextAkhir"
+        android:layout_width="match_parent"
+        android:text="17-09-2017"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+</LinearLayout>
