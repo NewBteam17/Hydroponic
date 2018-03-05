@@ -1,8 +1,6 @@
 Backend Laravel For Hydroponics Assistant IoT
 ============
 
-Firebase php wrapper for REST API
-
 ##Prerequisites
 - Laravel >= 5.4
 - Firebase >= 1.1.1
