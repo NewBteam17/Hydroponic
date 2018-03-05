@@ -1,0 +1,25 @@
+{
+    "name": "eelkevdbos/firebase-php",
+    "description": "Firebase php wrapper for REST API",
+    "license": "MIT",
+    "keywords": ["firebase", "REST", "wrapper"],
+    "authors": [{
+        "name": "Eelke van den Bos",
+        "email": "eelkevdbos@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.4",
+        "firebase/php-jwt": "~2.0",
+        "guzzlehttp/guzzle": "5.*",
+        "illuminate/support": ">=4.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.1",
+        "phpunit/phpunit": "4.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Firebase\\": "src"
+        }
+    }
+}
