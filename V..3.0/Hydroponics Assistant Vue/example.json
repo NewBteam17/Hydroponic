@@ -1,0 +1,10 @@
+{
+  "notification": {
+    "title": "Yay a message.",
+    "message": "Push message! Click for URL.",
+    "tag": "simple-push-demo-notification-tag",
+    "data": {
+      "url": "https://hydroponicarduino.firebaseio.com/"
+    }
+  }
+}
