@@ -11,7 +11,7 @@
 #include <FuzzyRuleConsequent.h>
 #include <FuzzySet.h>
 
-#define FUZZY_IN_SUHU 1
+#define FUZZY_IN_EEC 1
 #define FUZZY_IN_VOL 2
 #define FUZZY_OUT_SIRAM 3
 
@@ -22,19 +22,19 @@ uint32_t t_relay_start_on = 0;
 Fuzzy *fuzzy_main_obj = new Fuzzy();
 
 // input error
-FuzzySet *error_kecil = new FuzzySet(0, 0, 19, 25);
-FuzzySet *error_normal = new FuzzySet(20, 25, 25, 30);
-FuzzySet *error_besar = new FuzzySet(25, 30, 50, 50);
+FuzzySet *error_kecil = new FuzzySet(0, 0, 0.1, 0.2);
+FuzzySet *error_sedang = new FuzzySet(0.1, 0.2, 0.2, 0.3);
+FuzzySet *error_tinggi = new FuzzySet(0.2, 0.3, 0.4, 0.4);
 
 // input vol
-FuzzySet *vol_kosong = new FuzzySet(0, 0, 50, 70);
-FuzzySet *vol_normal = new FuzzySet(50, 70, 70, 90);
-FuzzySet *vol_penuh = new FuzzySet(70, 90, 100, 100);
+FuzzySet *vol_kosong = new FuzzySet(0, 0, 5, 10);
+FuzzySet *vol_medium = new FuzzySet(5, 10, 10, 15);
+FuzzySet *vol_penuh = new FuzzySet(10, 15, 20, 20);
 
 // output durasi siram
-FuzzySet *siram_sebentar = new FuzzySet(0, 0, 7, 10);
-FuzzySet *siram_cukup = new FuzzySet(7, 10, 10, 12);
-FuzzySet *siram_lama = new FuzzySet(10, 12, 15, 15);
+FuzzySet *siram_sebentar = new FuzzySet(0, 0, 4, 8);
+FuzzySet *siram_cukup = new FuzzySet(4, 8, 8, 10);
+FuzzySet *siram_lama = new FuzzySet(8, 10, 12, 12);
 
 float fuzzy_duration_out = 0.0;
 
@@ -70,17 +70,17 @@ float fuzzy_duration_out = 0.0;
  * @method fuzzyInit
  */
 void fuzzyInit() {
-  // FuzzyInput error
-  FuzzyInput *fz_eec = new FuzzyInput(FUZZY_IN_SUHU);
+  // FuzzyInput eec
+  FuzzyInput *fz_eec = new FuzzyInput(FUZZY_IN_EEC);
   fz_eec->addFuzzySet(error_kecil);
-  fz_eec->addFuzzySet(error_normal);
-  fz_eec->addFuzzySet(error_besar);
+  fz_eec->addFuzzySet(error_sedang);
+  fz_eec->addFuzzySet(error_tinggi);
   fuzzy_main_obj->addFuzzyInput(fz_eec);
 
   // FuzzyInput vol
   FuzzyInput *fz_vol = new FuzzyInput(FUZZY_IN_VOL);
   fz_vol->addFuzzySet(vol_kosong);
-  fz_vol->addFuzzySet(vol_normal);
+  fz_vol->addFuzzySet(vol_medium);
   fz_vol->addFuzzySet(vol_penuh);
   fuzzy_main_obj->addFuzzyInput(fz_vol);
 
@@ -96,39 +96,39 @@ void fuzzyInit() {
       createNewFuzzyRule(1, error_kecil, vol_kosong, siram_sebentar));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(2, error_kecil, vol_normal, siram_cukup));
+      createNewFuzzyRule(2, error_kecil, vol_medium, siram_cukup));
 
   fuzzy_main_obj->addFuzzyRule(
       createNewFuzzyRule(3, error_kecil, vol_penuh, siram_sebentar));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(4, error_normal, vol_kosong, siram_sebentar));
+      createNewFuzzyRule(4, error_sedang, vol_kosong, siram_sebentar));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(5, error_normal, vol_normal, siram_cukup));
+      createNewFuzzyRule(5, error_sedang, vol_medium, siram_cukup));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(6, error_normal, vol_penuh, siram_cukup));
+      createNewFuzzyRule(6, error_sedang, vol_penuh, siram_cukup));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(7, error_besar, vol_kosong, siram_lama));
+      createNewFuzzyRule(7, error_tinggi, vol_kosong, siram_lama));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(8, error_besar, vol_normal, siram_cukup));
+      createNewFuzzyRule(8, error_tinggi, vol_medium, siram_cukup));
 
   fuzzy_main_obj->addFuzzyRule(
-      createNewFuzzyRule(9, error_besar, vol_penuh, siram_lama));
+      createNewFuzzyRule(9, error_tinggi, vol_penuh, siram_lama));
 }
 
 /**
  * calculate duration fuzzy
  * @method fuzzyProcessInput
- * @param  errorx             eec
- * @param  volx              volume
+ * @param  eecx             eecerature
+ * @param  volx              volidity
  * @param  duration_out      output duration
  */
-void fuzzyProcessInput(float errorx, float volx, float *duration_out) {
-  fuzzy_main_obj->setInput(FUZZY_IN_SUHU, errorx);
+void fuzzyProcessInput(float eecx, float volx, float *duration_out) {
+  fuzzy_main_obj->setInput(FUZZY_IN_EEC, eecx);
   fuzzy_main_obj->setInput(FUZZY_IN_VOL, volx);
 
   fuzzy_main_obj->fuzzify();
@@ -142,9 +142,9 @@ void fuzzyProcessInput(float errorx, float volx, float *duration_out) {
  * @method processFuzzySystem
  */
 void processFuzzySystem() {
-          float nilaierror = 50.0 ;
-          float nilaivol = 100.0;
-          fuzzyProcessInput(nilaierror,\
+          float nilaieec = 0.1 ;
+          float nilaivol = 5.0;
+          fuzzyProcessInput(nilaieec,
                             nilaivol, &fuzzy_duration_out);
           t_relay_start_on = 0;
 
@@ -181,21 +181,21 @@ void debugTest() {
   APP_PORT_DEBUG.setTimeout(30000);
 
   APP_DEBUG_PRINT(F("EEC = "));
-  float errorx = 50.0;
+  float eecx = 0.1;
   APP_DEBUG_PRINT(F("VOL = "));
-  float volx = 100.0;
+  float volx = 5.0;
 
-  if ((errorx >= 0.0) && (volx >= 0.00)) {
-    fuzzyProcessInput(errorx, volx, &durx);
+  if ((eecx >= 0.0) && (volx >= 0.00)) {
+    fuzzyProcessInput(eecx, volx, &durx);
 
-    APP_DEBUG_PRINT(String("ERROR = ") + String(errorx) + String(" -- ") +
+    APP_DEBUG_PRINT(String("EECFZ = ") + String(eecx) + String(" -- ") +
                     String(error_kecil->getPertinence()) + String(" -- ") +
-                    String(error_normal->getPertinence()) + String(" -- ") +
-                    String(error_besar->getPertinence()));
+                    String(error_sedang->getPertinence()) + String(" -- ") +
+                    String(error_tinggi->getPertinence()));
 
-    APP_DEBUG_PRINT(String("VOLUM = ") + String(volx) + String(" -- ") +
+    APP_DEBUG_PRINT(String("VOLFZ = ") + String(volx) + String(" -- ") +
                     String(vol_kosong->getPertinence()) + String(" -- ") +
-                    String(vol_normal->getPertinence()) + String(" -- ") +
+                    String(vol_medium->getPertinence()) + String(" -- ") +
                     String(vol_penuh->getPertinence()));
 
     APP_DEBUG_PRINT(String("DURATION = ") +
