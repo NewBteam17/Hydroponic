@@ -1,27 +1,48 @@
 #include "Arduino.h"
 #include <SoftwareSerial.h>
 #include <OneWire.h>
+#include <DallasTemperature.h>
 
 #define DEBUG true
-  static float kekeruhan;
-  static float teg;
+#define ONE_WIRE_BUS 2 
+
+OneWire oneWire(ONE_WIRE_BUS); 
+DallasTemperature sensors(&oneWire);
  const String HOST = "kualitasair.000webhostapp.com"; //your localhost at same ssid, ifconfig
- SoftwareSerial ser(A2, A3); // RX 2, TX 3
+ SoftwareSerial ser(A2, A3); // TX 2, RX 3
 
   void setup(){
-    // setup kekeruhan
-  Serial.begin(9600);
+  //setup esp
+   Serial.begin(9600);
+   sensors.begin();
+   ser.begin(9600); // 9600 stable baud rate for uno
+   delay(100);
+   connectWifi();
+   delay(100);
   }
   
   void loop() {
+  //sensor Suhu
+  sensors.requestTemperatures(); // Send the command to get temperature readings
   // script kekeruhan
+  float teg;
+//  int a = 24.25;
+//  int c = 27.31;
   int val = analogRead(A0);
   teg = val*(5.0/1024);
-  kekeruhan = 100.00-(teg/4.16)*100.00;    
+  float b = 100.00-(teg/4.16)*100.00;
+  String kr = String(b);
+  String sh = String(sensors.getTempCByIndex(0));
+// String sh = String(c);
+//  Serial.print(kr);
+//  Serial.print(sh);
+ sendDataID(kr, sh);
+ delay(1000);// gunakan millis
+  // connection
   }
 
-  void sendDataID(String prm1) {
-  String request = "{\"kr\":\"" +prm1+ "\"}";
+  void sendDataID(String prm1, String prm2) {
+  String request = "{\"kr\":\"" +prm1+ "\", \"sh\":\"" + prm2 + "\"}";
   String cmd = "AT+CIPSTART=\"TCP\",\"";
  
    cmd += HOST;
@@ -29,7 +50,7 @@
    sendCommand(cmd, 600, DEBUG);
    delay(30);
  
-   String cmd2 = "POST /api/pushserver";
+   String cmd2 = "POST /api/pushfirebase";
    //cmd2 += String(svalFertInterval, DEC);
  
    cmd2 += " HTTP/1.1\r\n";
@@ -90,6 +111,7 @@ String sendCommand(String command, const int timeout, boolean debug) {
    delay(2000);
    Serial.print("Check IP Address...\n");
    sendCommand("AT+CIFSR\r\n", 1000, DEBUG); // get ip address
-   delay(500);
+   delay(100);
+   
  }
 

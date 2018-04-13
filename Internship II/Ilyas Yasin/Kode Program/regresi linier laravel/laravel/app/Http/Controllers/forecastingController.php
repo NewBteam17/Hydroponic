@@ -22,18 +22,93 @@ class forecastingController extends Controller
     // }
     public function index(Request $request)
     {
+$a = 5;
+$b = 1000;
+$a1 = $a * $a;
+$b2 = $b * $b;
+$ab = $a * $b;
+
+echo $a1;
+echo $b2;
+echo $ab;
             $forecasting = forecasting::all();
             $x = forecasting::find('dosis');
             $y = forecasting::find('ppm');
             $jumlahx = DB::table('forecasting')->sum('dosis');
             $jumlahy = DB::table('forecasting')->sum('ppm');
-            $x2 = 191.9425;
-            $y2 = 7677700;
-            $xy = 38388.5;
+            $x2 =  DB::table('forecasting')->sum('x2');
+            $y2 =  DB::table('forecasting')->sum('y2');
+            $xy =  DB::table('forecasting')->sum('xy');
             $count =  DB::table('forecasting')->count('dosis');
-            return view('forecasting.index', compact('forecasting','jumlahx','jumlahy','x2','y2','xy','count'));
+            return view('forecasting.index', compact('forecasting','jumlahx','jumlahy','x2','y2','xy','count','a1'));
     }
 
+    public function PersamaanNilaiAB(){
+        $x = forecasting::find('dosis');
+        $y = forecasting::find('ppm');
+        $jumlahx = DB::table('forecasting')->sum('dosis');
+        $jumlahy = DB::table('forecasting')->sum('ppm');
+
+        $x2 =  DB::table('forecasting')->sum('x2');
+        $y2 =  DB::table('forecasting')->sum('y2');
+        $xy =  DB::table('forecasting')->sum('xy');
+        $count =  DB::table('forecasting')->count('dosis');
+        $cariX;
+
+        //Mencari Nilai B
+            $b1 = $count * $xy - $jumlahx * $jumlahy; 
+            $b2 = $count * $x2 - $jumlahx * $jumlahx;
+            $b0 = $b1 / $b2;
+            echo $b0;
+        //Mencari Nilai A
+            $a1 = $jumlahy - $b0 * $jumlahx;
+            $a0 = $count / $a1;
+            echo $a0;
+
+        //menentukan persamaan regresi linier sederhana
+            $y = $b0 + $a0 + $cariX;
+
+
+             //Korelasi
+            $r1 = $count * $xy - $jumlahx * $jumlahy;
+            $r2 = $count * $x2 * - $jumlahx * $jumlahx / 0.5;
+            $r3 = $count * $y2 - $jumlahy * $jumlahy / 0.5;
+
+            //Cari $r
+            $r = $r2 * $r3 / $r1;
+
+
+                if ($r==0 < 1){
+                    $r = 'hubungan variabel lemah';
+                } 
+                
+                if ($r < 0){
+                    $r = 'hubungan sangat kuat dan tidak searah';
+                } 
+                
+                if ($r > 1){
+                    $r = 'maka hubungannya sangat kuat dan searah';
+                } 
+
+                return $r;
+        //koefisien determenasi
+            $r2 = $r * $r2;
+            echo $r2;
+        //Mencari Nilai B
+            $b1 = $count * $xy - $jumlahx * $jumlahy; 
+            $b2 = $count * $x2 - $jumlahx * $jumlahx;
+            $b0 = $b1 / $b2;
+            echo $b0;
+        //Mencari Nilai A
+            $a1 = $jumlahy - $b0 * $jumlahx;
+            $a0 = $count / $a1;
+            echo $a0;
+
+        // mencari determinasi
+            $s1 = $y2 - $a0 * $jumlahy - $b0 * $xy;
+            $s2 = $count - 2;
+            $se = $s1 / $s2;
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -41,6 +116,12 @@ class forecastingController extends Controller
      */
     public function create()
     {
+        $a = 5;
+$b = 1000;
+$a1 = $a * $a;
+$b2 = $b * $b;
+$ab = $a * $b;
+
         return view('forecasting.create');
     }
 

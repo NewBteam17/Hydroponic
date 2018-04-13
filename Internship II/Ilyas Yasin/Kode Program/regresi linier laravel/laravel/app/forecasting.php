@@ -25,7 +25,7 @@ class forecasting extends Model
      *
      * @var array
      */
-    protected $fillable = ['dosis', 'ppm'];
+    protected $fillable = ['dosis', 'ppm','x2','y2','xy'];
 
     
 }
