@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('hitung','RegresiController@hitung');
-
+Route::get('charts','forecastingController@statistik');
 Route::resource('forecasting', 'forecastingController');
 Route::get('hitungB','forecastingController@PersamaanNilaiB');
 
