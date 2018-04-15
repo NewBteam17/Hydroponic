@@ -27,7 +27,7 @@
                                         <td>{{ $item->dosis * $item->dosis }}</td>
                                         <td>{{ $item->ppm * $item->ppm }}</td>
                                         <td>{{ $item->dosis * $item->ppm }}</td>
-                                          <td>
+                                           <td>
                                             <a href="{{ url('/forecasting/' . $item->id . '/edit') }}" title="Edit forecasting"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                                             <form method="POST" action="{{ url('/forecasting' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
@@ -35,7 +35,7 @@
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete forecasting" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
-                                        </td>  
+                                        </td>   
                                         
                                     </tr>
                                 @endforeach
@@ -57,9 +57,9 @@
                                     <tr>
                                          <td>{{ $jumlahx }}</td>
                                          <td>{{ $jumlahy }}</td>
-                                         <td>{{ $x2}}</td>
-                                         <td>{{ $y2 }}</td>
-                                         <td>{{ $xy}}</td>
+                                         <td>{{ $jumlahx2}}</td>
+                                         <td>{{ $jumlahy2 }}</td>
+                                         <td>{{ $jumlahxy}}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -77,11 +77,11 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                         <td>{{ $b1 = $count * $xy - $jumlahx * $jumlahy  }}</td>
-                                             <td>{{ $b2 = $count * $x2 - ($jumlahx * $jumlahx) }}</td> 
+                                         <td>{{ $b1 = $count * $jumlahxy - $jumlahx * $jumlahy  }}</td>
+                                             <td>{{ $b2 = $count * $jumlahx2 - ($jumlahx * $jumlahx) }}</td> 
                                            <td> {{ $hasil = $b1/$b2 }} </td>
-                                            <td>{{$total = (200) * ($jumlahx) - ($jumlahy)}}</td>
-                                            <td>{{ $se = $y2 - 0 * $jumlahy - 200 * $xy / $count - 2 }} </td>
+                                            <td>{{$total = 200 * ($jumlahx) - ($jumlahy)}}</td>
+                                            <td>{{ $se = $jumlahy2 - 0 * $jumlahy - 200 * $jumlahxy / $count - 2 }} </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -98,95 +98,106 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                         <td>{{ $r1 = $count * $xy -  $jumlahx * $jumlahy  }}</td>
-                                         <td>{{ $r2 = ($count * $x2 - $jumlahx * $jumlahx)*0.5 }}</td>
-                                         <td>{{ $r3 = ($count * $y2 - $jumlahy * $jumlahy)*0.5 }}</td>
+                                         <td>{{ $r1 = $count * $jumlahxy -  $jumlahx * $jumlahy  }}</td>
+                                         <td>{{ $r2 = ($count * $jumlahx2 - $jumlahx * $jumlahx)*0.5 }}</td>
+                                         <td>{{ $r3 = ($count * $jumlahy2 - $jumlahy * $jumlahy)*0.5 }}</td>
                                          <td>{{ $r1 / $r2 * $r3 }} </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <center>
                             <div class="container">
         <div class="row">
-                         <div class="col-md-10">
+                         <div class="col-md-11">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Persamaan Regresi Linier Sederhana</h4>
-                                <p class="category">Faktor Akibat</p>
+                                <h4 class="title">Hasil Peramalan Dengan Persamaan Regresi Linier</h4>
+                                <p class="category">Faktor Akibat mencari X</p>
 
                                                     <form accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
                            <div class="form-group {{ $errors->has('dosis') ? 'has-error' : ''}}">
-    <label for="dosis" class="col-md-4 control-label">{{ 'a' }}</label>
+    <label for="dosis" class="col-md-4 control-label">{{ 'dosis Per-ML Liter' }}</label>
     <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value={{$hasil}} >
+        <input class="form-control" name="dosis" type="text" id="dosis" onkeyup="kali();">
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
-    <label for="dosis" class="col-md-4 control-label">{{ 'b' }}</label> 
+    <label for="hasil" class="col-md-4 control-label">{{ 'hasil B' }}</label> 
      <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value={{$total}} >
+        <input class="form-control" name="hasil" type="text" id="hasil" value={{$hasil}} disabled >
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
-    <label for="dosis" class="col-md-4 control-label">{{ 'X' }}</label> 
+    <label for="total" class="col-md-4 control-label">{{ 'hasil A' }}</label> 
      <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value="4" >
+        <input class="form-control" name="total" type="text" id="total" value={{$total}} disabled>
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
     </td>
-                            <button class="btn btn-secondary" type="submit">
-                                    Cari X</button>
-                                    <label for="dosis" class="col-md-4 control-label">{{ 'Dosis' }}</label> 
+   
+                                    <label for="dosis" class="col-md-4 control-label">{{ 'Jumlah Habis Nutrisi' }}</label> 
      <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value="{{$carix =  4 * $hasil + $total}}" >
+        <input class="form-control" name="result" type="text" id="result" disabled>
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
     </br>
-    <label> jadi Jika dosis pupuk nya mencapai 4 ml maka dipredisikan jumlah larutan yang dibutuhkan mencapai {{$carix}} PPM</label>
+    <label> jadi Jika dosis pupuk nya mencapai 4 ml maka dipredisikan jumlah larutan yang dibutuhkan mencapai PPM</label>
                         </form>
-                         <h4 class="title">Persamaan Regresi Linier Sederhana</h4>
-                                <p class="category">Faktor Penyebab</p>
-                        <form  accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
-                           <div class="form-group {{ $errors->has('dosis') ? 'has-error' : ''}}">
-    <label for="dosis" class="col-md-4 control-label">{{ 'a' }}</label>
+                         <h4 class="title">Hasil Peramalan Dengan Persamaan Regresi Linier</h4>
+                                <p class="category">Faktor Penyebab mencari Y</p>
+                          <form accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+    <label for="ppm" class="col-md-4 control-label">{{ 'PPM Nutrisi' }}</label> 
+     <div class="col-md-6">
+        <input class="form-control" name="ppm" type="text" id="ppm"  onkeyup="kali1();" >
+        {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
+    </div>
+    <div class="form-group {{ $errors->has('dosis') ? 'has-error' : ''}}">
+    <label for="total1" class="col-md-4 control-label">{{ 'Hasil A' }}</label>
     <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value={{$hasil}} >
+        <input class="form-control" name="total1" type="text" id="total1" value="{{$total}}" disabled>
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
-    <label for="dosis" class="col-md-4 control-label">{{ 'b' }}</label> 
+    <label for="hasil1" class="col-md-4 control-label">{{ 'hasil B' }}</label> 
      <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value={{$total}} >
-        {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
-    </div>
-    <label for="dosis" class="col-md-4 control-label">{{ 'Y' }}</label> 
-     <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value="800" >
+        <input class="form-control" name="hasil1" type="text" id="hasil1" value="{{$hasil}}" disabled >
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
     </td>
-                            <button class="btn btn-secondary" type="submit">
-                                    Cari Y</button>
-                                    <label for="dosis" class="col-md-4 control-label">{{ 'Dosis' }}</label> 
+    
+                                    <label for="dosis" class="col-md-4 control-label">{{ 'Jumlah Dosis yang dibutuhkan' }}</label> 
      <div class="col-md-6">
-        <input class="form-control" name="dosis" type="text" id="dosis" value="{{ $cariy =  ($total + 800) / $hasil}}" >
+        <input class="form-control" name="resul1t1" type="text" id="result1" disabled>
         {!! $errors->first('dosis', '<p class="help-block">:message</p>') !!}
     </div>
-    </br>
     <label>Jika Jumlah larutan nya PPM 800 (Variabel Y), Berapa Dosis yang dibutuhkan apabila target yang dibutuhkan dalam jumlah ditentukan 						
-jadi prediksi larutan yang sesuai mencapai adalah {{$cariy}} ml					
+jadi prediksi larutan yang sesuai mencapai adalah ml					
 </label>
-
+   </center>
+</script>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
     
     <script>
 function kali() {
       var txtFirstNumberValue = document.getElementById('dosis').value;
-      var txtSecondNumberValue = document.getElementById('ppm').value;
-      var result = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue);
+      var txtSecondNumberValue = document.getElementById('hasil').value;
+      var txtThreeNumberValue = document.getElementById('total').value;
+      var result = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue) + parseInt(txtThreeNumberValue);
       if (!isNaN(result)) {
-         document.getElementById('xy').value = result;
+         document.getElementById('result').value = result;
+      }
+}
+
+function kali1() {
+      var txtFirstNumberValue = document.getElementById('total1').value;
+      var txtSecondNumberValue = document.getElementById('ppm').value;
+      var txtThreeNumberValue = document.getElementById('hasil1').value;
+      var result = (parseInt(txtFirstNumberValue) + parseInt(txtSecondNumberValue)) / parseInt(txtThreeNumberValue);
+      if (!isNaN(result)) {
+         document.getElementById('result1').value = result;
       }
 }
 </script>
