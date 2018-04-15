@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use DB;
 use App\forecasting;
 use Illuminate\Http\Request;
+use Khill\Lavacharts\Lavacharts;
+use Lava;
 
 class forecastingController extends Controller
 {
@@ -22,25 +24,24 @@ class forecastingController extends Controller
     // }
     public function index(Request $request)
     {
-$a = 5;
-$b = 1000;
-$a1 = $a * $a;
-$b2 = $b * $b;
-$ab = $a * $b;
-
-echo $a1;
-echo $b2;
-echo $ab;
             $forecasting = forecasting::all();
             $x = forecasting::find('dosis');
             $y = forecasting::find('ppm');
             $jumlahx = DB::table('forecasting')->sum('dosis');
             $jumlahy = DB::table('forecasting')->sum('ppm');
-            $x2 =  DB::table('forecasting')->sum('x2');
-            $y2 =  DB::table('forecasting')->sum('y2');
-            $xy =  DB::table('forecasting')->sum('xy');
+            $jumlahx2 =  DB::table('forecasting')->sum('x2');
+            $jumlahy2 =  DB::table('forecasting')->sum('y2');
+            $jumlahxy =  DB::table('forecasting')->sum('xy');
             $count =  DB::table('forecasting')->count('dosis');
-            return view('forecasting.index', compact('forecasting','jumlahx','jumlahy','x2','y2','xy','count','a1'));
+            return view('forecasting.index', compact('forecasting','jumlahx','jumlahy','jumlahx2','jumlahy2','jumlahxy','count'));
+    }
+
+    public function statistik(Request $request)
+    {
+            $forecasting = forecasting::all();
+            $x = forecasting::find('dosis');
+            $y = forecasting::find('ppm');
+            return view('chart', compact('x','y','forecasting'));
     }
 
     public function PersamaanNilaiAB(){
