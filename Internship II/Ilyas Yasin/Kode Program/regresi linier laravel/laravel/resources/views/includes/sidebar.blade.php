@@ -41,9 +41,15 @@
                     </a>
                 </li>
                  <li>
-                    <a href="{{url('jenis_ph/create')}}">
+                    <a href="{{url('charts')}}">
                         <i class="pe-7s-note2"></i>
-                        <p>Input Data pH tanaman</p>
+                        <p>Statistik</p>
+                    </a>
+                </li>
+                 <li>
+                    <a href="{{url('rumus')}}">
+                        <i class="pe-7s-note2"></i>
+                        <p>Rumus</p>
                     </a>
                 </li>
             </ul>
