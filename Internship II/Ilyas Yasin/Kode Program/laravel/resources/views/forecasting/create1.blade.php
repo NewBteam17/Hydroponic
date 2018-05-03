@@ -6,14 +6,52 @@
 <section id="login">
      <div class="container">
         <div class="row">
-                         <div class="col-md-12">
+                         <div class="col-md-11">
+                        <div class="card">
+                            <center>
+                                </br>
+                            <h4 class="title">Forecasting Regresi Linier</h4>
+                                <p class="category">Hydrponics Assistant</p>
+                                <h1>Mencari Nilai PPM Berdasarkan EC</h1>
+                                 </center>
+                            <div class="form-group">
+                            <label for="dosis" class="sr-only"></label>
+                            <input type="text" name="ml" id="ml" class="form-control" placeholder="Masukan Dosis mlr" onkeyup="kali23();">
+                        </div>
+                        <div class="form-group">
+                            <label for="ppm" class="sr-only"></label>
+                            <input type="text" name="ec" id="ec" class="form-control" placeholder="Masukan Nilai Ec" onkeyup="kali23();">
+                        </div>
+                        <div class="form-group">
+                            <label for="dosis" class="sr-only"></label>
+                            <input type="text" name="lt" id="lt" class="form-control" placeholder="Masukan Liter Air" onkeyup="kali23();">
+                        </div>
+                        <div class="form-group">
+                            <label for="ppm" class="sr-only">i</label>
+                            <input type="text" name="d" id="d" class="form-control" placeholder="Masukan Jumlah Masing-Masing Nutris" onkeyup="kali23();">
+                        </div>
+                        <div class="form-group">
+                            <label for="ppm" class="sr-only">i</label>
+                            <input type="text" name="hasil" id="hasil" class="form-control" placeholder="Nilai PPM" disabled>
+                        </div>
+                 </div>
+    		</div> <!-- /.col-xs-12 -->
+    	</div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>
+<section id="login">
+     <div class="container">
+        <div class="row">
+                         <div class="col-md-11">
                         <div class="card">
                             <div class="header">
+                                <center>
                                 <h4 class="title">Forecasting Regresi Linier</h4>
                                 <p class="category">Hydrponics Assistant</p>
                 <h1>Masukan Jumlah Dosis nutrisi/pupuk ml dan Jumlah PPM tanaman Hidroponik</h1>
-                    <form method="POST" action="{{ url('/forecasting') }}" role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
-                        	  {{ csrf_field() }}
+                 </center>
+                        <form method="POST" action="{{ url('/forecasting') }}" role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                                {{ csrf_field() }}
                         <div class="form-group">
                             <label for="dosis" class="sr-only">Dosis Pupuk Mililiter</label>
                             <input type="text" name="dosis" id="dosis" class="form-control" placeholder="Dosis Pupuk Mililiter" onkeyup="kali22();">
@@ -42,6 +80,37 @@
     	</div> <!-- /.row -->
     </div> <!-- /.container -->
 </section>
+  <script>
+function kali22() {
+      var txtFirstNumberValue = document.getElementById('dosis').value;
+      var txtSecondNumberValue = document.getElementById('ppm').value;
+      var result = parseInt(txtFirstNumberValue) * parseInt(txtFirstNumberValue);
+       var result1 = parseInt(txtSecondNumberValue) * parseInt(txtSecondNumberValue);
+        var result2 = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue);
+      if (!isNaN(result)) {
+         document.getElementById('x2').value = result;
+      }
+
+      if (!isNaN(result1)) {
+         document.getElementById('y2').value = result1;
+      }
+
+      if (!isNaN(result2)) {
+         document.getElementById('xy').value = result2;
+      }
+
+}
+function kali23() {
+      var txtml = document.getElementById('ml').value;
+      var txtec = document.getElementById('ec').value;
+      var txtlt = document.getElementById('lt').value;
+      var txtxd = document.getElementById('d').value; 
+      var resulthasil = parseInt(txtml) * parseInt(txtec) / parseInt(txtlt) * parseInt(txtxd);
+      if (!isNaN(resulthasil)) {
+         document.getElementById('hasil').value = resulthasil;
+      }
+}
+</script>
 <style lang="text/css">
 /*    --------------------------------------------------
 	:: Login Section
@@ -135,25 +204,4 @@
     color: inherit;
 }
 </style>
-  <script>
-function kali22() {
-      var txtFirstNumberValue = document.getElementById('dosis').value;
-      var txtSecondNumberValue = document.getElementById('ppm').value;
-      var result = parseInt(txtFirstNumberValue) * parseInt(txtFirstNumberValue);
-       var result1 = parseInt(txtSecondNumberValue) * parseInt(txtSecondNumberValue);
-        var result2 = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue);
-      if (!isNaN(result)) {
-         document.getElementById('x2').value = result;
-      }
-
-      if (!isNaN(result1)) {
-         document.getElementById('y2').value = result1;
-      }
-
-      if (!isNaN(result2)) {
-         document.getElementById('xy').value = result2;
-      }
-
-}
-</script>
 @endsection

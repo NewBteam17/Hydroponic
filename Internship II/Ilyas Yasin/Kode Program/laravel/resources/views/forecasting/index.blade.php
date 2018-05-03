@@ -12,7 +12,7 @@
                             <table class="table table-hover table-striped">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>X</th><th>Y</th>
+                                        <th>#</th><th>Dosis(X)</th><th>Jumlah Nutrisi PPM(Y)</th>
                                         <th>X2</th>
                                         <th>Y2</th>
                                          <th>XY</th>
@@ -30,11 +30,18 @@
                                            <td>
                                             <a href="{{ url('/forecasting/' . $item->id . '/edit') }}" title="Edit forecasting"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
-                                            <form method="POST" action="{{ url('/forecasting' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
-                                                {{ method_field('DELETE') }}
-                                                {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete forecasting" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
-                                            </form>
+                                            {!! Form::open([
+                                                'method'=>'DELETE',
+                                                'url' => ['/forecasting', $item->id],
+                                                'style' => 'display:inline'
+                                            ]) !!}
+                                                {!! Form::button('<i class="fa fa-trash-o" aria-hidden="true"></i> Delete', array(
+                                                        'type' => 'submit',
+                                                        'class' => 'btn btn-danger btn-xs',
+                                                        'title' => 'Delete forecasing',
+                                                        'onclick'=>'return confirm("delete delete?")'
+                                                )) !!}
+                                            {!! Form::close() !!}
                                         </td>  
                                         
                                     </tr>
@@ -80,7 +87,7 @@
                                          <td>{{ $b1 = $count * $jumlahxy - $jumlahx * $jumlahy  }}</td>
                                              <td>{{ $b2 = $count * $jumlahx2 - ($jumlahx * $jumlahx) }}</td> 
                                            <td> {{ $hasil = $b1/$b2 }} </td>
-                                            <td>{{$total = 200 * ($jumlahx) - ($jumlahy)}}</td>
+                                            <td>{{$total = $hasil * ($jumlahx) - ($jumlahy)}}</td>
                                             <td>{{ $se = $jumlahy2 - 0 * $jumlahy - 200 * $jumlahxy / $count - 2 }} </td>
                                     </tr>
                                 </tbody>

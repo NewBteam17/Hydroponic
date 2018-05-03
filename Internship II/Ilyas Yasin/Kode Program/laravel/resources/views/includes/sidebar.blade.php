@@ -10,8 +10,8 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
-                  FORECASTING REGRESI LINIER SEDERHANA
+                <a href="{{url('/forecasting/create')}}" class="simple-text">
+                  SIMPLE LINIAR REGRESSION FORECASTING
                 </a>
             </div>
 
@@ -31,33 +31,35 @@
                  <li>
                     <a href="{{url('jenis_tanaman/create')}}">
                         <i class="pe-7s-note2"></i>
-                        <p>Input Data tanaman</p>
-                    </a>
-                </li>
-                 <li>
-                    <a href="{{url('jenis_ph/create')}}">
-                        <i class="pe-7s-note2"></i>
-                        <p>Input Data pH tanaman</p>
+                        <p>Input Data Plant</p>
                     </a>
                 </li>
                 <li>
                     <a href="{{url('charts')}}">
                         <i class="pe-7s-note2"></i>
-                        <p>Statistik</p>
+                        <p>statistics</p>
                     </a>
                 </li>
                 <li>
                 <a href="{{url('rumus')}}">
                         <i class="pe-7s-note2"></i>
-                        <p>Rumus</p>
+                        <p>Formula (Rumus)</p>
                     </a>
                 </li>
                 <li>
+                    
                 <a href="{{url('/')}}">
                         <i class="pe-7s-note2"></i>
-                        <p>Keluar</p>
+                        <p onclick="myFunction()">Keluar</p>
                     </a>
+
                 </li>
             </ul>
     	</div>
     </div>
+
+<script>
+function myFunction() {
+    alert("Keluar dari Aplikasi");
+}
+</script>

@@ -75,7 +75,7 @@
 
         	$.notify({
             	icon: 'pe-7s-gift',
-            	message: "Welcome to <b>Forecasting Regresi linier Method</b> - a beautiful freebie for every web developer."
+            	message: "Welcome to <b>Forecasting Regresi linier Method</b>-."
 
             },{
                 type: 'info',

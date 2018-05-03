@@ -37,7 +37,7 @@
           <div class="intro-text">
             <h1>Regresi linier Sederana</h1>
             <p>Peralaman jumlah habis nya pupuk atau nutrisi ppm hidroponik</p>
-            <a href="{{url('forecasting')}}" class="btn btn-default btn-lg page-scroll">Forecasting Simple Regression Linear</a> </div>
+            <a href="{{url('forecasting/create')}}" class="btn btn-default btn-lg page-scroll">Forecasting Simple Regression Linear</a> </div>
         </div>
       </div>
     </div>
